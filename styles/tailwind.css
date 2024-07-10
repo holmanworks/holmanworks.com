@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+      font-family: "Roobert";
+      font-weight: 400;
+      src: url('../fonts/Roobert-Regular.woff2') format('woff2');
+    }
+  }
+  
+  @layer base {
+    @font-face {
+      font-family: "Roobert";
+      font-weight: 500;
+      src: url('../fonts/Roobert-Medium.woff2') format('woff2');
+    }
+  }
+  
+  @layer base {
+    @font-face {
+      font-family: "Roobert";
+      font-weight: 600;
+      src: url('../fonts/Roobert-SemiBold.woff2') format('woff2');
+    }
+  }
+  
+  @layer base {
+    @font-face {
+      font-family: "Roobert";
+      font-weight: 700;
+      src: url('../fonts/Roobert-Bold.woff2') format('woff2');
+    }
+  }
+
+  @font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-diamond:before {
+    content: "\e900";
+  }
+
+
+  /* Animation */
+  .fade-enter {
+    opacity: 0;
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+  }
+  
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+  }
+  
