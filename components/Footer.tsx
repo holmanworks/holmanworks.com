@@ -8,25 +8,8 @@ import { PowerBy } from '@/components/Logo'
 
 export function Footer() {
   return (
-    <footer className="bg-white">
+    <footer className="bg-[#f5f3ec]">
       <Container>
-        <div className="py-12 grid justify-items-center">
-
-          <MakesheetsLogo className="mx-auto h-10 w-auto" />
-
-          <Link href="/" className="pt-3" aria-label="Home page">
-            <PowerBy />
-          </Link>
-          
-          <nav className="mt-10 text-sm" aria-label="quick links">
-
-            <div className="flex justify-center">
-              <NavLink href="#benefits">What you'll get</NavLink>
-              <NavLink href="#steps">How it works</NavLink>
-            </div>
-
-          </nav>
-        </div>
 
         <div className="flex flex-col items-center border-t border-divider py-8 sm:flex-row-reverse sm:justify-between">
           <div className="flex gap-x-6">
@@ -53,7 +36,7 @@ export function Footer() {
             
           </div>
           <p className="mt-6 text-sm text-grey sm:mt-0">
-            Copyright &copy; {new Date().getFullYear()} MakeSheets. All rights
+            Copyright &copy; {new Date().getFullYear()} Holmanworks. All rights
             reserved.
           </p>
         </div>

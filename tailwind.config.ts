@@ -67,9 +67,9 @@ const config = {
       },
 
       fontFamily: {
+        mono: ['IBMPlexMono'],
         sans: ['Roobert', 'system-ui', 'sans-serif'],
         display: ['Roobert', 'system-ui', 'sans-serif'],
-        icomoon: ['icomoon'],
       },
 
       maxWidth: {

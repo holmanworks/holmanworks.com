@@ -104,43 +104,24 @@ function MobileNavigation() {
 // DESKTOP HEADER
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 bg-white w-full">
+    <header className="sticky top-0 z-50 bg-[#f5f3ec] w-full">
       <Container>
         <nav className="flex items-center justify-between h-[64px]">
           {/* <div className="flex items-center md:gap-x-12"> */}
 
             {/* LOGO */}
-            <div className='flex-1 flex justify-start'>
+            <div className='font-mono text-base flex-1 flex justify-start'>
               <Link href="#" aria-label="Home">
-                <MakesheetsLogo className="flex items-center w-auto h-10" />
+                holmanworks.com              
               </Link>
             </div>
             
             {/* NAVIGATION */}
             <div className="hidden lg:flex -my-5">
-              <NavLink href="#benefits">What you'll get</NavLink>
-              <NavLink href="#steps">How it works</NavLink>
+              <NavLink href="#benefits">Works</NavLink>
+              <NavLink href="#benefits">About me</NavLink>
             </div>
 
-            {/* SIGN IN / SIGN UP BUTTON */}
-            <div className="flex flex-1 justify-end gap-x-2 md:gap-x-2 -my-5">
-              <div className="hidden md:block">
-                <Button href="" variant="ghost" color="black" size="small">
-                  Log in
-                </Button>
-              </div>
-              
-              <Button href="" variant="solid" color="primary" size="small">
-                <span>
-                  Sign up <span className="hidden lg:inline"></span>
-                </span>
-              </Button>
-
-              <div className="-mr-1 md:hidden">
-                <MobileNavigation />
-              </div>
-              
-            </div>
         </nav>
       </Container>
     </header>
