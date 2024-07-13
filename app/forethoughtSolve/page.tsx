@@ -138,7 +138,7 @@ export default function Solve() {
 
         {/* Design Goal */}
         <Container className='py-16'>
-          <div className='text-5xl font-semibold pb-3'>Design Goal</div>
+          <div className='text-5xl font-semibold pb-3'>Phase 1 Design Goal</div>
 
           <div className='grid md:grid-cols-2 grid-cols-1 text-xl gap-10'>
             <div className='flex flex-col'>
