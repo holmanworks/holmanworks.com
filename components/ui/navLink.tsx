@@ -10,7 +10,7 @@ export function NavLink({
   return (
     <Link
       href={href}
-      className="font-mono flex items-center rounded-full h-10 px-5 text-base text-grey hover:bg-gray-200 hover:text-black"
+      className="border-b-2 border-transparent font-mono flex items-center h-10 text-base text-grey hover:border-black hover:text-black hover:font-medium"
     >
       {children}
     </Link>

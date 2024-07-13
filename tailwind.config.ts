@@ -15,7 +15,7 @@ const config = {
       sm:['12px', '16px'],
       base:['14px', '18px'],
       lg:['16px', '20px'],
-      xl:['18px', '22px'],
+      xl:['18px', '24px'],
       '2xl':['20px', '24px'],
       '3xl':['24px', '28px'],
       '4xl':['32px', '36px'],

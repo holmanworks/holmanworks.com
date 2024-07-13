@@ -1,17 +1,15 @@
 import Link from 'next/link'
 
 import { Container } from '@/components/ui/container'
-import { MakesheetsLogo } from '@/components/Logo'
 import { NavLink } from '@/components/ui/navLink'
-import { PowerBy } from '@/components/Logo'
 
 
 export function Footer() {
   return (
-    <footer className="bg-[#f5f3ec]">
+    <footer className="bg-white">
       <Container>
 
-        <div className="flex flex-col items-center border-t border-divider py-8 sm:flex-row-reverse sm:justify-between">
+        <div className="flex flex-col items-center py-8 sm:flex-row-reverse sm:justify-between">
           <div className="flex gap-x-6">
 
             {/* <Link href="#" className="group" aria-label="on X">
@@ -35,7 +33,7 @@ export function Footer() {
             </Link> */}
             
           </div>
-          <p className="mt-6 text-sm text-grey sm:mt-0">
+          <p className="text-sm text-grey font-mono">
             Copyright &copy; {new Date().getFullYear()} Holmanworks. All rights
             reserved.
           </p>

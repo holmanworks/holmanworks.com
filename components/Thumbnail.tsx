@@ -1,8 +1,8 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { useEffect, useState, } from 'react'
 import clsx from 'clsx'
 import React from 'react';
-
 import { Container } from '@components/ui/container'
 import thumbnail from '@/images/screenshots/forethought/thumbnail.png'
 
@@ -10,11 +10,12 @@ import thumbnail from '@/images/screenshots/forethought/thumbnail.png'
 
 const steps = [
   {
-      number:'01',
-      title: 'Enter a text instruction',
-      content:
-        'Enter your URL for MakeYour.Ai to scan, or upload files, or drop in raw text content.',
-      icon: thumbnail,    
+      title: 'Forethought Solve - the workflow builder',
+      date: 'Dec 2021 - Oct 2023',
+      image: thumbnail,
+      content: '•UI/UX •Visual Design •Prototyping & Testing',
+      link: '/forethoughtSolve',
+      bgColor: 'bg-indigo-200',
   },
 ]
 
@@ -24,33 +25,46 @@ export function Thumbnail() {
 
       <Container>
 
-        <div className="mx-auto flex flex-col w-full max-w-[1024px] gap-2">
+        <div className="mx-auto w-full">
           {steps.map((step, stepIndex) => (
-            <div key={stepIndex} className='relative grid grid-cols-1 lg:grid-cols-2'>
+            <div key={stepIndex} className='relative grid md:grid-cols-8 grid-cols-1 gap-6'>
 
               {/* Image */}
-              <div className='p-10 flex justify-center bg-indigo-200'>
-                <Image
-                  src={step.icon} 
-                  alt='' 
-                  className='' />
-              </div>
+              <Link 
+                href={step.link}
+                className={clsx("md:h-[480px] h-[360px] col-span-6 p-8 flex justify-center", step.bgColor)}
+              >
+                  <div className="relative w-full">
+                    <Image
+                      src={step.image}
+                      alt=""
+                      layout="fill"
+                      objectFit="contain"
+                      className="transition-transform duration-300 ease-in-out transform hover:scale-95"
+                    />
+                  </div>
+
+              </Link>
+
 
               {/* Text */}
-              <div className='flex flex-col md:gap-y-4 gap-y-2 md:p-12 p-4 justify-center'>
-                <div className="font-medium text-4xl text-primary">
-                  {step.number}
+              <div className='col-span-2 flex flex-col'>
+
+                  <div className="font-mono text-medium text-base text-black pb-5">
+                    {step.title}
+                  </div>
+
+                  {step.content.split('•').map((sentence, idx) => (
+                    <p key={idx} className="text-base font-mono text-gray-500">
+                      {sentence.trim()}
+                    </p>
+                  ))}
+
+                  <p className="text-base font-mono text-gray-500 pt-5">
+                    {step.date}
+                  </p>
                 </div>
 
-                <div className="font-medium md:text-6xl sm:text-5xl text-4xl text-black">
-                  {step.title}
-                </div>
-
-                <p className="md:text-xl text-lg text-gray-800">
-                  {step.content}
-                </p>
-              </div>
-              
             </div>
             
           ))}

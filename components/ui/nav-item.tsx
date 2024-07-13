@@ -54,12 +54,12 @@ export function NavTab({
     <Link
       href={href}
       className={clsx(
-        'flex items-center text-base font-semibold transition-all border-b-2',
+        'flex items-center text-base transition-all border-b-2',
         {
           'text-black': variant === 'black',
           'text-white': variant === 'white',
           'opacity-100': pathname === href,
-          'opacity-50 border-transparent': pathname !== href,
+          'opacity-60 border-transparent': pathname !== href,
         },
         className
       )}

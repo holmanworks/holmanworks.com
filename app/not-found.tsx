@@ -12,12 +12,6 @@ export default function NotFound() {
   return (
     <Container className='items-center flex h-screen flex-col m-auto justify-center'>
 
-      <div className="flex justify-center">
-        <Link href="/" aria-label="Home">
-          <MakesheetsIcon className="h-10 w-auto" />
-        </Link>
-      </div>
-
       <h1 className="mt-10 md:text-7xl text-6xl font-semibold text-black text-center">
         Oh sheet... page not found
       </h1>

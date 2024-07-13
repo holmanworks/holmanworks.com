@@ -6,8 +6,7 @@ import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 import { Button } from '@components/ui/button'
 import { Container } from '@components/ui/container'
-import { MakesheetsLogo, Logo } from '@/components/Logo'
-import { NavLink } from '@components/ui/navLink'
+import { NavTab } from '@components/ui/nav-item'
 
 function MobileNavLink({
   href,
@@ -104,22 +103,22 @@ function MobileNavigation() {
 // DESKTOP HEADER
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 bg-[#f5f3ec] w-full">
+    <header className="sticky top-0 z-50 bg-white w-full">
       <Container>
         <nav className="flex items-center justify-between h-[64px]">
           {/* <div className="flex items-center md:gap-x-12"> */}
 
             {/* LOGO */}
             <div className='font-mono text-base flex-1 flex justify-start'>
-              <Link href="#" aria-label="Home">
+              <Link href="/" aria-label="Home">
                 holmanworks.com              
               </Link>
             </div>
             
             {/* NAVIGATION */}
-            <div className="hidden lg:flex -my-5">
-              <NavLink href="#benefits">Works</NavLink>
-              <NavLink href="#benefits">About me</NavLink>
+            <div className="flex -my-5 gap-8 h-8">
+              <NavTab variant="black" href="/" className='border-black font-mono'>Works</NavTab>
+              <NavTab variant="black" href="/about" className='border-black font-mono'>About me</NavTab>
             </div>
 
         </nav>

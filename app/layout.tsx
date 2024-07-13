@@ -32,7 +32,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={clsx(
-        'h-full scroll-smooth bg-[#f5f3ec] antialiased',
+        'h-full scroll-smooth bg-white antialiased',
       )}
     >
       <CSPostHogProvider>
