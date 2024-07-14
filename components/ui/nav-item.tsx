@@ -59,7 +59,7 @@ export function NavTab({
           'text-black': variant === 'black',
           'text-white': variant === 'white',
           'opacity-100': pathname === href,
-          'opacity-60 border-transparent': pathname !== href,
+          'opacity-60 border-transparent hover:opacity-100': pathname !== href,
         },
         className
       )}
