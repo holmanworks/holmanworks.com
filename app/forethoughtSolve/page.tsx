@@ -15,6 +15,20 @@ import solution from '@/images/screenshots/forethought/solution.png'
 import feature1 from '@/images/screenshots/forethought/gif_buttons.gif'
 import feature2 from '@/images/screenshots/forethought/gif_dragndrop.gif'
 import feature3 from '@/images/screenshots/forethought/gif_rightpanel.gif'
+import trainingphrase from '@/images/screenshots/forethought/wfb_trainingphrase.png'
+import preview from '@/images/screenshots/forethought/wfb_preview.png'
+import barometer from '@/images/screenshots/forethought/wfb_barometer.png'
+import copypaste from '@/images/screenshots/forethought/wfb_copypaste.png'
+import translation from '@/images/screenshots/forethought/wfb_translations.png'
+import iteration1 from '@/images/screenshots/forethought/iteration1.png'
+import iteration2 from '@/images/screenshots/forethought/iteration2.png'
+import designsystem from '@/images/screenshots/forethought/designsystem.png'
+import bugbash from '@/images/screenshots/forethought/bugbash.png'
+import validation from '@/images/screenshots/forethought/validation.png'
+import vmware from '@/images/screenshots/forethought/ic_vmware.jpg'
+import upwork from '@/images/screenshots/forethought/ic_upwork.jpg'
+import ifit from '@/images/screenshots/forethought/ic_ifit.jpg'
+import v2cover from '@/images/screenshots/forethought/wfb_v2_cover.png'
 
 
 export default function Solve() {
@@ -30,8 +44,8 @@ export default function Solve() {
             <FTSolve />
           </div>
 
-          <div className='flex flex-col lg:text-8xl text-6xl font-semibold justify-center text-center'>
-            Forethought Solve - The Workflow Builder
+          <div className='flex flex-col lg:text-9xl text-6xl font-medium justify-center text-center'>
+            Forethought Solve - Workflow Builder
           </div>
 
           <div className='grid md:grid-cols-3 grid-cols-1 gap-5'>
@@ -99,7 +113,7 @@ export default function Solve() {
             In September 2021, the company introduced Workflow Builder (v.0), featuring a graphical interface for CS admins to edit workflows. The goal was to enable self-service and reduce the workload of Implementation Engineers. However, there was a lack of motivation for our clients' admins to try it.
           </div>
 
-          <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-8 pt-1">
             <div>
               <Image
                 src={vInternal}
@@ -126,7 +140,7 @@ export default function Solve() {
             I have limited opportunities to speak directly with clients. To understand their needs, I consulted with our VP of Product, Product Managers, Sales Representatives, Implementation Engineers, and other team members. From these discussions, I have identified some possible reasons.
           </div>
 
-          <div className="relative md:h-[600px] h-[360px] flex justify-center bg-gray-100 ">
+          <div className="relative md:h-[600px] h-[360px] flex justify-center bg-gray-100">
             <Image
               src={strategy}
               alt="Strategy"
@@ -138,15 +152,14 @@ export default function Solve() {
         </Container>
 
 
-        {/* Phase 1 Design Goal */}
+        {/* Design Goal */}
         <Container className='py-16'>
-          <div className='text-5xl font-medium pb-3'>Phase 1 Design Goal</div>
+          <div className='text-5xl font-medium pb-3'>Design Goal - Phase 1</div>
 
           <div className='grid md:grid-cols-2 grid-cols-1 text-xl gap-10'>
 
             <div className='flex'>
               <div className='text-3xl w-8 font-medium py-4'>1.</div>
-              
               <div className='flex-1'>
                 <div className='text-3xl font-medium py-4'>
                   Easy and engaging for non-technical users
@@ -162,15 +175,18 @@ export default function Solve() {
               </div>
             </div>
 
-            <div className='flex flex-col'>
-              <div className='text-3xl font-medium py-4'>
-                Develop a design system
-              </div>
+            <div className='flex'>
+              <div className='text-3xl w-8 font-medium py-4'>2.</div>
+              <div className='flex-1'>
+                <div className='text-3xl font-medium py-4'>
+                  Develop a design system
+                </div>
 
-              <ul className='list-disc pl-5 gap-5 flex flex-col text-lg'>
-                <li>Design interface that aligns with Forethought new brand identity, brand voice and tone.</li>
-                <li>Create a design system that sets standards and building blocks to maintain a consistent look and feel across all products and experiences.</li>
-              </ul>
+                <ul className='list-disc pl-5 gap-5 flex flex-col text-lg'>
+                  <li>Design interface that aligns with Forethought new brand identity, brand voice and tone.</li>
+                  <li>Create a design system that sets standards and building blocks to maintain a consistent look and feel across all products and experiences.</li>
+                </ul>
+              </div>
             </div>
           </div>
         </Container>
@@ -271,13 +287,13 @@ export default function Solve() {
 
 
         {/* Features */}
-        <Container className='py-16 flex flex-col gap-8'>
+        <Container className='py-8 flex flex-col gap-8'>
           <div className='grid md:grid-cols-3 grid-cols-1 text-xl md:gap-8'>
             <div className='flex flex-col justify-center col-span-1 gap-1'>
-              <div className='md:text-4xl text-lg font-medium'>
+              <div className='md:text-4xl text-2xl font-medium'>
                 1-click navigate through different branches
               </div>
-              <p className='text-base flex flex-col'>
+              <p className='text-base flex flex-col pb-2'>
                 Easily navigate each branch to focus on the conversation in each subcategory.
               </p>
             </div>
@@ -295,10 +311,10 @@ export default function Solve() {
 
           <div className='grid md:grid-cols-3 grid-cols-1 text-xl md:gap-8'>
             <div className='flex flex-col justify-center col-span-1 gap-1'>
-              <div className='md:text-4xl text-lg font-medium'>
+              <div className='md:text-4xl text-2xl font-medium'>
                 Drag and drop
               </div>
-              <p className='text-base flex flex-col'>
+              <p className='text-base flex flex-col pb-2'>
                 Enables users to drag and drop pre-configured elements from the right panel, ensuring accessibility for those without technical expertise.
               </p>
             </div>
@@ -316,10 +332,10 @@ export default function Solve() {
 
           <div className='grid md:grid-cols-3 grid-cols-1 text-xl md:gap-8'>
             <div className='flex flex-col justify-center col-span-1 gap-1'>
-              <div className='md:text-4xl text-lg font-medium'>
+              <div className='md:text-4xl text-2xl font-medium'>
                 Hierarchy of visual elements
               </div>
-              <p className='text-base flex flex-col'>
+              <p className='text-base flex flex-col pb-2'>
                 Allows users to customize the right panel of elements without navigating through multiple menus or interfaces.
               </p>
             </div>
@@ -335,7 +351,193 @@ export default function Solve() {
             </div>
           </div>
         </Container>
+
+
+        {/* More */}
+        <Container className='py-16'>
+          <div className='text-5xl font-medium pb-4'>More Features</div>
+
+          <ul role="list" className="grid md:grid-cols-2 grid-cols-1 gap-8">
+            <li>
+              <Image src={trainingphrase} alt=""/>
+              <div className='flex pt-2 text-base'>Chatbot training</div>
+            </li>
+
+            <li>
+              <Image src={preview} alt=""/>
+              <div className='flex pt-2 text-base'>Chatbot testing</div>
+            </li>
+
+            <li>
+              <Image src={barometer} alt=""/>
+              <div className='flex pt-2 text-base'>Chatbot health monitoring</div>
+            </li>
+
+            <li>
+              <Image src={copypaste} alt=""/>
+              <div className='flex pt-2 text-base'>Reuse steps or workflows</div>
+            </li>
+
+            <li>
+              <Image src={translation} alt=""/>
+              <div className='flex pt-2 text-base'>Support multilingual</div>
+            </li>
+          </ul>
+        </Container>
+
+
+        {/* Iteration */}
+        <Container className='py-16'>
+          <div className='text-5xl font-medium pb-3'>Iteration</div>
+          <div className='text-lg pb-4'>
+            The toughest part of this project is making sure everything looks clear and that interactions are consistent, especially when dealing with issues like “users can’t delete” and understanding why certain actions are restricted.
+          </div>
+          <div className='text-lg pb-4'>
+            To accomplish this, we explore every use case and scenario, using clear labels, tooltips, dialog-box, and well-organized visual layout to guide users effectively.
+          </div>
+
+          <div className="flex flex-col bg-gray-100 p-10 gap-10">
+            <Image src={iteration1} alt="" />
+            <Image src={iteration2} alt="" />
+          </div>
+        </Container>
+
+
+        {/* Design System */}
+        <Container className='py-16'>
+          <div className='text-5xl font-medium pb-3'>Design System</div>
+          <div className='text-lg pb-4'>
+            When designing a component for a design system, it’s essential to consider all potential use cases, and should be adaptable and scalable to different products within the organization.
+          </div>
+
+          <div className="flex flex-col bg-gray-100 p-10 gap-10">
+            <Image src={designsystem} alt="" />
+          </div>
+        </Container>
+
+
+        {/* Bug Bash */}
+        <Container className='py-16'>
+          <div className='text-5xl font-medium pb-3'>Bug Bash</div>
+          <div className='text-lg pb-4'>
+            I worked very closely with the Front End team to spec out any missing interactions that were not covered in the high fidelity mockups. 
+          </div>
+          <div className='text-lg pb-4'>
+            I utilized Chrome “Inspect” to assist engineers in debugging and fixing code issue.
+          </div>
+
+          <div className="flex flex-col bg-gray-100 p-10 gap-10">
+            <Image src={bugbash} alt="" />
+          </div>
+        </Container>
+
         
+        {/* User Feedbacks */}
+        <Container className='py-16'>
+          <div className='grid grid-cols-2 gap-8'>
+            <div className='col-span-1'>
+              <div className='text-5xl font-medium pb-3'>User Feedbacks</div>
+              <div className='text-lg pb-4'>
+                We conducted user interview and remote testing sessions regularly with our clients, helped us to validate, test ideas and iterate quickly.
+              </div>
+            </div>
+
+            <div className='col-span-1'>
+              <Image src={validation} alt="" />
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 grid-cols-1 pt-8 gap-8">
+            <div className='flex flex-col gap-1'>
+              <div className='flex gap-4'>
+                <Image src={vmware} alt="" className='w-10 h-10' />
+                <div className='flex flex-col'>
+                  <div className='text-2xl font-medium'>CS Admin</div>
+                  <div className='text-base'>VMware</div>
+                </div>
+              </div>
+              <div className='flex gap-4'>
+                <div className='flex-1'>
+                  <p className='text-black text-lg pt-2 italic'>" ... implementation has been easy and thorough and the tool is very easy to use.  I’m still early into configuration but so far the experience has been great… "</p>
+                </div>
+              </div>
+            </div>
+
+            <div className='flex flex-col gap-1'>
+              <div className='flex gap-4'>
+                <Image src={upwork} alt="" className='w-10 h-10' />
+                <div className='flex flex-col'>
+                  <div className='text-2xl font-medium'>Project Manager/Admin</div>
+                  <div className='text-base'>Upwork</div>
+                </div>
+              </div>
+              <div className='flex gap-4'>
+                <div className='flex-1'>
+                  <p className='text-black text-lg pt-2 italic'>" ... I really like this product, the workflow builder is awesome.  It’s really easy to understand. Seeing the status per bubble helps (Barometer). Training the workflow is easy… ”</p>
+                </div>
+              </div>
+            </div>
+
+            <div className='flex flex-col gap-1'>
+              <div className='flex gap-4'>
+                <Image src={ifit} alt="" className='w-10 h-10' />
+                <div className='flex flex-col'>
+                  <div className='text-2xl font-medium'>Operations Manager</div>
+                  <div className='text-base'>iFit</div>
+                </div>
+              </div>
+              <div className='flex gap-4'>
+                <div className='flex-1'>
+                  <p className='text-black text-lg pt-2 italic'>" ... it’s not complex, not like you need to take an online courses to figure out how to use it, utilize the AI and the interface to make it as simple and as intuitive… “</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Container>
+        
+
+        {/* Results */}
+        <Container className='py-16'>
+          <div className='text-5xl font-medium pb-3'>Results</div>
+          <div className='text-lg pb-8'>
+            The introduction of Solve version 1.0 has not only significantly improved its product-market fit but has also:
+          </div>
+
+          <div className='flex'>
+            <ul className='list-disc pl-6 gap-4 flex flex-col md:text-4xl text-2xl'>
+              <li>Generated over <span className='font-semibold'>50%</span> of the company's revenue.</li>
+              <li>Reduce the first valuable moment from 120 days to <span className='font-semibold'>32 days</span>.</li>
+              <li>Self-serviceability increased by over <span className='font-semibold'>10%</span>.</li>
+            </ul>
+          </div>
+        </Container>
+
+
+        {/* Continued improvements */}
+        <Container className='py-16'>
+          <div className='p-10 bg-gray-100'>
+            <div className='grid grid-cols-2 gap-10'>
+              <div className='flex flex-col'>
+                <div className='col-span-1'>
+                  <div className='text-5xl font-medium pb-4'>Continued improvements</div>
+                </div>
+
+                <div className='flex'>
+                  <ul className='list-disc pl-6 gap-5 flex flex-col text-lg'>
+                    <li><span className='font-semibold'>Improve efficiency</span> - Drag-and-drop components speed up workflow building.</li>
+                    <li><span className='font-semibold'>Scalable design</span> - Maintains optimal user experience as features grow.</li>
+                    <li><span className='font-semibold'>Reduce friction</span> - Clear error messages guide users on corrective steps.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className='col-span-1'>
+                <Image src={v2cover} alt="" />
+              </div>
+            </div>
+          </div>
+        </Container>
+
       </div>
       <Footer />
     </>

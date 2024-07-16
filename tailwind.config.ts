@@ -19,7 +19,7 @@ const config = {
       '2xl':['20px', '24px'],
       '3xl':['24px', '28px'],
       '4xl':['32px', '36px'],
-      '5xl':['36px', '40px'],
+      '5xl':['40px', '44px'],
 
       '6xl':['48px',{
         lineHeight: '50px',
@@ -70,6 +70,7 @@ const config = {
         mono: ['IBMPlexMono'],
         sans: ['Roobert', 'system-ui', 'sans-serif'],
         display: ['Roobert', 'system-ui', 'sans-serif'],
+        serif: ['CrimsonPro', 'system-ui', 'sans-serif'],
       },
 
       maxWidth: {

@@ -58,6 +58,12 @@
     src: url('../fonts/IBMPlexMono-Bold.ttf');
   }
 
+  @font-face {
+    font-family: "CrimsonPro";
+    font-weight: 400;
+    src: url('../fonts/CrimsonPro-Regular.ttf');
+  }
+
 
   /* Animation */
   .fade-enter {
