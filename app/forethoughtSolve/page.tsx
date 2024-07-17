@@ -505,9 +505,9 @@ export default function Solve() {
 
           <div className='flex'>
             <ul className='list-disc pl-6 gap-4 flex flex-col md:text-4xl text-2xl'>
-              <li>Generated over <span className='font-semibold'>50%</span> of the company's revenue.</li>
-              <li>Reduce the first valuable moment from 120 days to <span className='font-semibold'>32 days</span>.</li>
-              <li>Self-serviceability increased by over <span className='font-semibold'>10%</span>.</li>
+              <li>Generated over <span className='font-bold'>50%</span> of the company's revenue.</li>
+              <li>Reduce the first valuable moment from 120 days to <span className='font-bold'>32 days</span>.</li>
+              <li>Self-serviceability increased by over <span className='font-bold'>10%</span>.</li>
             </ul>
           </div>
         </Container>

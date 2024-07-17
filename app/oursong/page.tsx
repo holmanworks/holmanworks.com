@@ -11,15 +11,16 @@ import explore1 from '@/images/screenshots/oursong/Explore-1.png'
 import explore2 from '@/images/screenshots/oursong/Explore-2.png'
 import explore3 from '@/images/screenshots/oursong/Explore-3.png'
 import explore4 from '@/images/screenshots/oursong/Explore-4.png'
+import insight from '@/images/screenshots/oursong/insight.png'
+import pivot1 from '@/images/screenshots/oursong/pivot1.png'
+import pivot2 from '@/images/screenshots/oursong/pivot2.gif'
+import pivot3 from '@/images/screenshots/oursong/pivot3.png'
+import research from '@/images/screenshots/oursong/research.png'
+import insight2 from '@/images/screenshots/oursong/insight2.png'
+import solution1 from '@/images/screenshots/oursong/solution1.png'
+import solution2 from '@/images/screenshots/oursong/solution2.gif'
+import selfservice from '@/images/screenshots/oursong/self-servicing.gif'
 
-import v0 from '@/images/screenshots/forethought/v-0.png'
-import vInternal from '@/images/screenshots/forethought/v-internal.png'
-import strategy from '@/images/screenshots/forethought/strategy.png'
-import insight from '@/images/screenshots/forethought/insight.png'
-import concept1 from '@/images/screenshots/forethought/concept1.png'
-import concept2 from '@/images/screenshots/forethought/concept2.png'
-import concept3 from '@/images/screenshots/forethought/concept3.png'
-import solution from '@/images/screenshots/forethought/solution.png'
 import feature1 from '@/images/screenshots/forethought/gif_buttons.gif'
 import feature2 from '@/images/screenshots/forethought/gif_dragndrop.gif'
 import feature3 from '@/images/screenshots/forethought/gif_rightpanel.gif'
@@ -88,7 +89,7 @@ export default function Oursong() {
 
 
         {/* Herobanner */}
-        <div className="my-16 mx-auto flex gap-8 max-w-[1140px] justify-center bg-red-200 p-10">
+        <div className="my-16 mx-auto flex flex-wrap gap-8 max-w-[1140px] justify-center bg-red-200 p-10">
             <Image src={oscover1} alt="cover1" className='h-[520px] w-auto border-[6px] border-black rounded-[36px]' />
             <Image src={oscover2} alt="cover2" className='h-[520px] w-auto border-[6px] border-black rounded-[36px]'/>
             <Image src={oscover3} alt="cover3" className='h-[520px] w-auto border-[6px] border-black rounded-[36px]'/>
@@ -97,46 +98,46 @@ export default function Oursong() {
 
         {/* Overview */}
         <Container className='py-16'>
-          <div className='text-5xl font-medium pb-3'>Overview</div>
+          <div className='text-5xl font-medium pb-4'>Overview</div>
           <div className='grid md:grid-cols-3 grid-cols-1 text-xl gap-10'>
 
-            <div className='flex flex-col'>
-              <div className='text-3xl font-medium py-4'>
+            <div className='flex flex-col gap-4 pt-4'>
+              <div className='text-3xl font-medium'>
                 What is OurSong?
               </div>
-              <div className='text-lg pb-4'>
+              <div className='text-lg'>
                 The blockchain-based platform was designed to give creators, including musicians and artists, a more equitable way to monetize their work, and build communities around them.
               </div>
-              <div className='text-lg pb-4'>
+              <div className='text-lg'>
                 The company was co-founded by:
               </div>
 
               <ul className='list-disc pl-5 gap-1 flex flex-col text-lg'>
-                <li><span className='font-semibold'>Chris Lin</span>, CEO of KKBOX</li>
-                <li><span className='font-semibold'>Kevin Lin</span>, Co-founder of Twitch</li>
+                <li><span className='font-bold'>Chris Lin</span>, CEO of KKBOX</li>
+                <li><span className='font-bold'>Kevin Lin</span>, Co-founder of Twitch</li>
               </ul>
             </div>
 
-            <div className='flex flex-col'>
-              <div className='text-3xl font-medium py-4'>
+            <div className='flex flex-col gap-4 pt-4'>
+              <div className='text-3xl font-medium'>
                 Users
               </div>
-              <div className='text-lg pb-4'>
-                <span className='font-semibold'>Creators / Artists</span> -  Independent artist, uses our platform to connect with her fans and creates digital merch for the metaverse.
+              <div className='text-lg'>
+                <span className='font-bold'>Creators / Artists</span> -  Independent artist, uses our platform to connect with her fans and creates digital merch for the metaverse.
               </div>
-              <div className='text-lg pb-4'>
-                <span className='font-semibold'>Collectors / Fans</span> -  Gen-Z individuals who are eager to support their favorite artists or creators through buying their works and perks.              </div>
+              <div className='text-lg'>
+                <span className='font-bold'>Collectors / Fans</span> -  Gen-Z individuals who are eager to support their favorite artists or creators through buying their works and perks.              </div>
             </div>
 
-            <div className='flex flex-col'>
-              <div className='text-3xl font-medium py-4'>
+            <div className='flex flex-col gap-4 pt-4'>
+              <div className='text-3xl font-medium'>
                 Project Goal
               </div>
-              <div className='text-lg pb-4'>
+              <div className='text-lg'>
                 I led efforts to boost user engagement after our initial app launch. To achieve this, we need to:
               </div>
 
-              <ul className='list-disc pl-5 gap-5 flex flex-col text-lg'>
+              <ul className='list-disc pl-5 gap-4 flex flex-col text-lg'>
                 <li>Improve fan/user engagement.</li>
                 <li>Implement self-serviceability to simplify NFT creation.</li>
                 <li>Expand monetization opportunities for creators beyond NFT sales.</li>
@@ -148,181 +149,262 @@ export default function Oursong() {
 
 
         {/* Background */}
-        <Container className='py-16'>
-          <div className='text-5xl font-medium pb-3'>Background</div>
-          <div className='text-lg pb-4'>
+        <Container className='py-16 flex flex-col gap-4'>
+          <div className='text-5xl font-medium'>Background</div>
+          <div className='text-lg'>
             OurSong began as a blockchain research project at the Ideation Lab of KKBOX, an on-demand music streaming service in asia.
           </div>
-          <div className='text-lg pb-4'>
+          <div className='text-lg'>
             In May 2019, OurSong (v.1) was launched, utilizing blockchain technology to create limited edition NFTs represented as virtual cards, essentially digital token.  The NFTs are collectible due to supply is limited, and each one is uniquely owned by its owner.  Our platform also allows collectors to trade these NFTs on our marketplace.
           </div>
 
-          <div className="grid md:grid-cols-5 grid-cols-1 gap-8 pt-1">
+          <div className="grid grid-cols-5 gap-4 py-2">
             <div>
               <Image src={explore0} alt="" className='h-auto w-auto border-[4px] border-black rounded-[22px]' />
-              <p className='text-black pt-2 text-base text-center'>Explore available Music NFTs</p>
+              <p className='text-black pt-2 px-2 text-base text-center'>Explore available Music NFTs</p>
+            </div>
+
+            <div className=''>
+              <Image src={explore1} alt="" className='h-auto w-auto border-[4px] border-black rounded-[22px]' />
+              <p className='text-black pt-2 px-2 text-base text-center'>Discover the details behind of a song</p>
             </div>
 
             <div>
-              <Image
-                src={v0}
-                alt=""
-              />
-              <p className='text-black pt-2 text-base'><span className='font-semibold'>Version 0 -</span> Decision tree diagram builder</p>
+              <Image src={explore3} alt="" className='h-auto w-auto border-[4px] border-black rounded-[22px]' />
+              <p className='text-black pt-2 px-2 text-base text-center'>Music NFTs showcased as virtual cards</p>
+            </div>
+
+            <div className=''>
+              <Image src={explore4} alt="" className='h-auto w-auto border-[4px] border-black rounded-[22px]' />
+              <p className='text-black pt-2 px-2 text-base text-center'>Swipe the card for exclusive contents</p>
+            </div>
+
+            <div>
+              <Image src={explore2} alt="" className='h-auto w-auto border-[4px] border-black rounded-[22px]' />
+              <p className='text-black pt-2 px-2 text-base text-center'>Buy or sell on our marketplace</p>
             </div>
           </div>
-        </Container>
 
-
-        {/* Strategy */}
-        <Container className='py-16'>
-          <div className='text-5xl font-medium pb-3'>Strategy</div>
-          <div className='text-lg pb-4'>
-            I have limited opportunities to speak directly with clients. To understand their needs, I consulted with our VP of Product, Product Managers, Sales Representatives, Implementation Engineers, and other team members. From these discussions, I have identified some possible reasons.
+          <div className='text-2xl font-medium py-4 text-gray-500'>
+            Key takeaways after the first launch:
           </div>
-
-          <div className="relative md:h-[600px] h-[360px] flex justify-center bg-gray-100">
-            <Image
-              src={strategy}
-              alt="Strategy"
-              layout="fill"
-              objectFit="contain"
-              className=''
-            />
+          <div className='flex'>
+            <ul className='list-disc pl-6 gap-4 flex flex-col md:text-4xl text-2xl'>
+              <li>Fans showed willingness to pay.</li>
+              <li>Artists/Creators struggled to explain NFTs to fans.</li>
+              <li>Low engagement post-purchase.</li>
+              <li>Difficulty in acquiring artists due to NFT complexity and limited social influence.</li>
+            </ul>
           </div>
         </Container>
 
 
-        {/* Design Goal */}
-        <Container className='py-16'>
-          <div className='text-5xl font-medium pb-3'>Design Goal - Phase 1</div>
+        {/* Insight */}
+        <Container className='grid md:grid-cols-2 grid-cols-1 py-16 gap-8'>
+          <div className='flex flex-col col-span-1 gap-4'>
+            <div className='text-5xl font-medium'>Insight</div>
+            <div className='text-lg'>
+              After the initial launch, our focus shifted to improving fan engagement to attract more creators. Increasing app retention became a key priority.
+            </div>
+            <div className='text-lg'>
+              Analysis showed that a number of users engaged with the <span className='font-bold'>“Stories”</span> feature, where artists/creators post updates during song creation, with fans actively commenting on each post.
+            </div>
+            <div className='text-lg'>
+              After the initial launch, our focus shifted to improving fan engagement to attract more creators. Increasing app retention became a key priority.
+            </div>
+          </div>
 
-          <div className='grid md:grid-cols-2 grid-cols-1 text-xl gap-10'>
+          <div className="col-span-1 relative flex justify-center bg-gray-200 pt-10 aspect-square">
+            <Image src={insight} alt="" className='h-auto w-auto rounded-t-[22px]' />
+          </div>
+        </Container>
 
-            <div className='flex'>
-              <div className='text-3xl w-8 font-medium py-4'>1.</div>
-              <div className='flex-1'>
-                <div className='text-3xl font-medium py-4'>
-                  Easy and engaging for non-technical users
+
+        {/* Quick pivot */}
+        <Container className='py-16 gap-4 flex flex-col'>
+          <div className='text-5xl font-medium'>Quick pivot</div>
+          <div className='grid md:grid-cols-3 grid-cols-1 text-xl gap-12 pt-2'>
+
+            <div className='flex md:flex-col gap-4 w-full'>
+              <div className='md:w-full h-auto w-1/2'>
+                <Image src={pivot1} alt="" className='border-[6px] border-black rounded-[32px]' />
+              </div>
+              <div className='flex flex-col px-1 md:w-full w-1/2'>
+                <div className='text-3xl font-medium'>#1</div>
+                <div className='text-3xl font-medium'>Improve clarity</div>
+                <div className='text-lg pt-2'>
+                  Provide clear information about the benefits of purchasing this NFT.
+                </div>
+              </div>
+            </div>
+
+            <div className='flex md:flex-col gap-4 w-full'>
+              <div className='md:w-full h-auto w-1/2'>
+                <Image src={pivot2} alt="" className='border-[6px] border-black rounded-[32px]' />
+              </div>
+              <div className='flex flex-col px-1 md:w-full w-1/2'>
+                <div className='text-3xl font-medium'>#2</div>
+                <div className='text-3xl font-medium'>Share your thoughts</div>
+                <div className='text-lg pt-2'>
+                  Allow fans to share their impressions with the artists/creators and all others who appreciate the song.
+                </div>
+              </div>
+            </div>
+
+            <div className='flex md:flex-col gap-4 w-full'>
+              <div className='md:w-full h-auto w-1/2'>
+                <Image src={pivot3} alt="" className='border-[6px] border-black rounded-[32px]' />
+              </div>
+              <div className='flex flex-col px-1 md:w-full w-1/2'>
+                <div className='text-3xl font-medium'>#3</div>
+                <div className='text-3xl font-medium'>Get exclusive message</div>
+                <div className='text-lg pt-2'>
+                  NFT owners will receive exclusive messages from artists/creators and can also leave comments.
+                </div>
+                <div className='text-xl font-semibold italic pt-2'>
+                  (We chose a message UI over feed posts for a more private interaction).
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='text-2xl font-medium py-4 text-gray-500'>
+            Key takeaways:
+          </div>
+          <div className='flex'>
+            <ul className='list-disc pl-6 gap-4 flex flex-col md:text-4xl text-2xl'>
+              <li><span className='font-bold'>21%</span> of the <span className='font-bold'>146</span> song projects, fans have shared their impressions.</li>
+              <li>A total of <span className='font-bold'>1,127</span> exclusive messages were sent and viewed by <span className='font-bold'>4,338</span> users.</li>
+              <li>(DAU) increased after artists/creators sent exclusive message, but the growth was not consistent.</li>
+            </ul>
+          </div>
+        </Container>
+
+
+        {/* User Interviews */}
+        <Container className='grid md:grid-cols-2 grid-cols-1 py-16 gap-8'>
+          <div className='flex flex-col col-span-1 gap-4'>
+            <div className='text-5xl font-medium'>User Interviews</div>
+            <div className='text-lg'>
+              To understand our users better, I partnered with Product Manager to conduct focus groups and qualitative interviews.
+            </div>
+            <div className='text-2xl font-semibold py-4 text-black'>
+              Objectives:
+            </div>
+            <ul className='list-disc pl-5 gap-4 flex flex-col text-lg'>
+              <li>Understand fan motivations and behaviors in music engagement.</li>
+              <li>Identify preferred engagement platforms and channels.</li>
+              <li>Understand barriers to fan engagement.</li>
+              <li>Explore gamification role in boosting engagement.</li>
+              <li>Investigate community’s impact on engagement and loyalty.</li>
+            </ul>
+          </div>
+
+          <div className="col-span-1 flex flex-col gap-1 justify-center aspect-center">
+            <Image src={research} alt="" className='h-auto w-auto' />
+          </div>
+        </Container>
+
+
+        {/* Insights */}
+        <Container className='py-16 flex flex-col gap-y-4'>
+          <div className='grid md:grid-cols-2 grid-cols-1 gap-8'>
+            <div className='flex flex-col gap-4'>
+              <div className='text-5xl font-medium'>Insights</div>
+              <div className='text-lg'>
+                After the user interviews, I collaborated with my teammates to map and synthesize the feedback. 
+              </div>
+              <div className='text-lg'>
+                We used Empathy Maps to enhance our understand of user profile, helping teams in developing valuable insights.
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-1 justify-center aspect-center">
+              <Image src={insight2} alt="" className='h-auto w-auto' />
+            </div>
+          </div>
+
+          <div className='text-2xl font-medium py-4 text-gray-500'>
+            Key findings:
+          </div>
+          <div className='flex'>
+            <ul className='list-disc pl-6 gap-4 flex flex-col md:text-4xl text-2xl'>
+              <li>Target users: Gen Z (15-26), primarily introverts.</li>
+              <li>Seeking resonances with same interests.</li>
+              <li>Want to feel special and to have a connection with artists/creators.</li>
+              <li>Worry about the quality of content that they contribute.</li>
+              <li>Concerned about cyberbullying, sexual harassment, and personal attacks.</li>
+            </ul>
+          </div>
+        </Container>
+
+
+        {/* Solution */}
+        <Container className='py-16 gap-4 flex flex-col'>
+          <div className='text-5xl font-medium'>Solution</div>
+
+          <div className='flex flex-col gap-16'>
+            {/* #1 */}
+            <div className='flex flex-col'>
+              <div className="grid grid-cols-5 gap-4 py-2">
+                <div>
+                  <Image src={explore0} alt="" className='h-auto w-auto border-[4px] border-black rounded-[22px]' />
                 </div>
 
-                <ul className='list-disc pl-5 gap-5 flex flex-col text-lg'>
-                  <li>Provide CS admins a visual interface for creating conversational workflows, including complex sequences of action and conditions.</li>
-                  <li>Allow non-technical CS admin to launch a chatbot with no coding skills.</li>
-                  <li>Reduce Forethought Implement Engineer team workload.</li>
-                  <li>Promote self-service and drive product growth.</li>
-                  <li>Bridge the gap between our product and that of competitors.</li>
+                <div className=''>
+                  <Image src={explore1} alt="" className='h-auto w-auto border-[4px] border-black rounded-[22px]' />
+                </div>
+
+                <div>
+                  <Image src={explore3} alt="" className='h-auto w-auto border-[4px] border-black rounded-[22px]' />
+                </div>
+
+                <div className=''>
+                  <Image src={explore4} alt="" className='h-auto w-auto border-[4px] border-black rounded-[22px]' />
+                </div>
+
+                <div>
+                  <Image src={explore2} alt="" className='h-auto w-auto border-[4px] border-black rounded-[22px]' />
+                </div>
+              </div>
+
+              <div className='flex flex-col gap-4 justify-center h-full p-10'>
+                <div className='text-4xl font-medium'>
+                  Music NTF = Access Card
+                </div>
+                <div className='text-lg'>
+                  The virtual NFT card acts as a unique digital membership token, granting access to exclusive VIP communities. 
+                </div>
+                <div className='text-lg'>
+                  Here, members find belonging, acceptance, and identity within the group, free from fake news and artificial connections.
+                </div>
+                <ul className='list-decimal pl-5 gap-4 flex flex-col text-lg'>
+                  <li><span className='font-bold'>Interest-based communities</span> - Connect individuals with shared passions, enable collaboration and communication on topics they are passionate in.</li>
+                  <li><span className='font-bold'>Channel organization</span> - Each channel serves a specific purpose or topic, allowing users to find discussions they are interested in.</li>
                 </ul>
               </div>
             </div>
 
-            <div className='flex'>
-              <div className='text-3xl w-8 font-medium py-4'>2.</div>
-              <div className='flex-1'>
-                <div className='text-3xl font-medium py-4'>
-                  Develop a design system
+            {/* #2 */}
+            <div className='grid md:grid-cols-2 grid-cols-1'>
+              <div className='flex flex-col gap-4 justify-center h-full p-10'>
+                <div className='text-4xl font-medium'>
+                  Enabled self-servicing
                 </div>
-
-                <ul className='list-disc pl-5 gap-5 flex flex-col text-lg'>
-                  <li>Design interface that aligns with Forethought new brand identity, brand voice and tone.</li>
-                  <li>Create a design system that sets standards and building blocks to maintain a consistent look and feel across all products and experiences.</li>
-                </ul>
+                <div className='text-lg'>
+                  Turn your original content into NFT in just seconds. Have complete freedom to decide how many editions to make, set initial sell price and your NFT debut date. 
+                </div>
               </div>
-            </div>
-          </div>
-        </Container>
 
-
-        {/* Insight & Ideation */}
-        <Container className='py-16'>
-          <div className='grid grid-cols-3 gap-8'>
-            <div className='col-span-2'>
-              <div className='text-5xl font-medium pb-3'>Insight & Ideation</div>
-              <div className='text-lg pb-4'>
-                Base on the findings, CS admins often use mind mapping tools to organize their ideas, scripts, and processes. Also, they frequently need to tailor and refine their chatbot scripts.
+              <div className="flex aspect-square justify-center p-10 bg-gray-200">
+                <div>
+                  <Image src={selfservice} alt="" className='border-[4px] h-full w-auto border-black rounded-[22px]' />
+                </div>
               </div>
             </div>
 
-            <div className='col-span-1'>
-              <Image
-                src={insight}
-                alt="Insight"
-              />
-            </div>
-          </div>
+            {/* #3 */}
 
-          <div className="grid md:grid-cols-3 grid-cols-1 pt-8 gap-8">
-            <div>
-              <Image
-                src={concept1}
-                alt="Internal version"
-              />
-              <p className='text-black pt-2 text-base font-semibold'>Concept 1 - Timeline blocks</p> 
-              <p className='text-black text-base'>Each step or action displayed as a block from left to right.</p>
-            </div>
-
-            <div>
-              <Image
-                src={concept2}
-                alt="Internal version"
-              />
-              <p className='text-black pt-2 text-base font-semibold'>Concept 2 - Accordion layouts</p> 
-              <p className='text-black text-base'>Organizes workflow elements into collapsible sections for focused use.</p>
-            </div>
-
-            <div>
-              <Image
-                src={concept3}
-                alt="Internal version"
-              />
-              <p className='text-black pt-2 text-base font-semibold'>Concept 3 - Chat-based interface</p> 
-              <p className='text-black text-base'>Each workflow step is represented as a message exchange between the user and the system.</p>
-            </div>
-          </div>
-        </Container>
-
-
-        {/* The Design */}
-        <Container className='py-16'>
-          <div className='text-5xl font-medium pb-3'>The Design</div>
-          <div className='text-lg pb-4'>
-            <span className='font-semibold'>Chat-Based UI</span> enables users to build workflows that align with natural communication patterns, enhancing user-friendliness, especially for those unfamiliar with traditional interfaces or technology.
-          </div>
-
-          <div className="relative md:h-[480px] h-[360px] flex justify-center bg-indigo-200">
-            <Image
-              src={solution}
-              alt="Strategy"
-              layout="fill"
-              objectFit="contain"
-              className='p-6'
-            />
-          </div>
-
-          <div className="grid md:grid-cols-3 grid-cols-1 pt-4 gap-4">
-            <div className='flex'>
-              <p className='w-6 text-black pb-1 text-2xl font-medium'>1.</p>
-              <div className='flex-1'>
-                <p className='text-black text-2xl font-medium'>Intent Section</p> 
-                <p className='text-black text-base pt-1'>It provides an example of phrases indicating customers’ intentions to inquire.</p>
-              </div>
-            </div>
-
-            <div className='flex'>
-              <p className='w-6 text-black pb-1 text-2xl font-medium'>2.</p>
-              <div className='flex-1'>
-                <p className='text-black text-2xl font-medium'>Builder Canvas</p> 
-                <p className='text-black text-base pt-1'>It is where the entire conversation is crafted, replacing the traditional tree diagram.</p>
-              </div>
-            </div>
-
-            <div className='flex'>
-              <p className='w-6 text-black pb-1 text-2xl font-medium'>3.</p>
-              <div className='flex-1'>
-                <p className='text-black text-2xl font-medium'>Input and Business Logic Components</p> 
-                <p className='text-black text-base pt-1'>Type a message as a response to the user when they interact with your widget.</p>
-              </div>
-            </div>
           </div>
         </Container>
 
