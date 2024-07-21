@@ -92,14 +92,32 @@ export default function Solve() {
 
 
         {/* Overview */}
-        <Container className='py-16'>
-          <div className='text-5xl font-medium pb-3'>Overview</div>
-          <div className='text-lg pb-4'>
-            Forethought Solve is an AI-powered customer support platform, combined with natural language understanding and generative AI to provide customers with the right answers.
+        <Container className='py-16 gap-4 flex flex-col'>
+          <div className='text-5xl font-medium'>Overview</div>
+
+          <div className='pt-4 gap-10 grid md:grid-cols-2 grid-cols-1'>
+            <div className='flex flex-col gap-4'>
+              <p className='text-black text-3xl font-medium'>
+                What is "Solve?"
+              </p>
+              <p className='text-lg'>
+                Forethought Solve is an AI-powered customer support platform, combined with natural language understanding and generative AI to provide customers with the right answers.
+              </p>
+              <p className='text-lg'>
+                <span className='font-semibold'>Workflow Builder</span> is a tool that allows admins to create, customize, and manage workflows.
+              </p>
+            </div>
+
+            <div className='flex flex-col gap-4'>
+              <p className='text-black text-3xl font-medium'>
+                Who will use?
+              </p>
+              <p className='text-lg'>
+                <span className='font-semibold'>CS admin</span> - non-technical customer support agents who design the best automated support for their customers.
+              </p>
+            </div>
           </div>
-          <div className='text-lg'>
-            <span className='font-semibold'>Workflow Builder</span> is a tool that allows admins to create, customize, and manage workflows.
-          </div>
+
         </Container>
 
 

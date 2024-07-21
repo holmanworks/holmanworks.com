@@ -20,24 +20,19 @@ import insight2 from '@/images/screenshots/oursong/insight2.png'
 import solution1 from '@/images/screenshots/oursong/solution1.png'
 import solution2 from '@/images/screenshots/oursong/solution2.gif'
 import selfservice from '@/images/screenshots/oursong/self-servicing.gif'
+import creationflow from '@/images/screenshots/oursong/creationflow.png'
+import sendgift1 from '@/images/screenshots/oursong/sendgift1.png'
+import sendgift2 from '@/images/screenshots/oursong/sendgift2.gif'
+import monetization1 from '@/images/screenshots/oursong/monetization1.png'
+import monetization2 from '@/images/screenshots/oursong/monetization2.gif'
+import voucher1 from '@/images/screenshots/oursong/voucher1.png'
+import voucher2 from '@/images/screenshots/oursong/voucher2.gif'
+import result1 from '@/images/screenshots/oursong/web1.png'
+import result2 from '@/images/screenshots/oursong/web2.png'
+import result3 from '@/images/screenshots/oursong/web3.png'
+import result4 from '@/images/screenshots/oursong/web4.png'
+import result5 from '@/images/screenshots/oursong/web5.png'
 
-import feature1 from '@/images/screenshots/forethought/gif_buttons.gif'
-import feature2 from '@/images/screenshots/forethought/gif_dragndrop.gif'
-import feature3 from '@/images/screenshots/forethought/gif_rightpanel.gif'
-import trainingphrase from '@/images/screenshots/forethought/wfb_trainingphrase.png'
-import preview from '@/images/screenshots/forethought/wfb_preview.png'
-import barometer from '@/images/screenshots/forethought/wfb_barometer.png'
-import copypaste from '@/images/screenshots/forethought/wfb_copypaste.png'
-import translation from '@/images/screenshots/forethought/wfb_translations.png'
-import iteration1 from '@/images/screenshots/forethought/iteration1.png'
-import iteration2 from '@/images/screenshots/forethought/iteration2.png'
-import designsystem from '@/images/screenshots/forethought/designsystem.png'
-import bugbash from '@/images/screenshots/forethought/bugbash.png'
-import validation from '@/images/screenshots/forethought/validation.png'
-import vmware from '@/images/screenshots/forethought/ic_vmware.jpg'
-import upwork from '@/images/screenshots/forethought/ic_upwork.jpg'
-import ifit from '@/images/screenshots/forethought/ic_ifit.jpg'
-import v2cover from '@/images/screenshots/forethought/wfb_v2_cover.png'
 
 
 export default function Oursong() {
@@ -48,7 +43,7 @@ export default function Oursong() {
       <div className='w-full text-black'>
         
         {/* Title */}
-        <Container className='py-16 flex flex-col lg:gap-12 gap-8'>
+        <Container className='py-20 flex flex-col lg:gap-12 gap-8'>
           <div className='grid justify-center'>
             <OursongLogo />
           </div>
@@ -89,15 +84,32 @@ export default function Oursong() {
 
 
         {/* Herobanner */}
-        <div className="my-16 mx-auto flex flex-wrap gap-8 max-w-[1140px] justify-center bg-red-200 p-10">
-            <Image src={oscover1} alt="cover1" className='h-[520px] w-auto border-[6px] border-black rounded-[36px]' />
-            <Image src={oscover2} alt="cover2" className='h-[520px] w-auto border-[6px] border-black rounded-[36px]'/>
-            <Image src={oscover3} alt="cover3" className='h-[520px] w-auto border-[6px] border-black rounded-[36px]'/>
+        <div className="mx-auto max-w-[1140px] flex justify-center bg-red-200 md:p-10 p-6">
+          <div className='grid grid-cols-3 md:gap-8 gap-4'>
+            <Image
+              src={oscover1}
+              alt="Strategy"
+              height={520}
+              className='mx-auto md:border-[6px] border-[3px] border-black md:rounded-[32px] rounded-[16px]'
+            />
+            <Image
+              src={oscover2}
+              alt="Strategy"
+              height={520}
+              className='mx-auto md:border-[6px] border-[3px] border-black md:rounded-[32px] rounded-[16px]'
+            />
+            <Image
+              src={oscover3}
+              alt="Strategy"
+              height={520}
+              className='mx-auto md:border-[6px] border-[3px] border-black md:rounded-[32px] rounded-[16px]'
+            />
+          </div>
         </div>
 
 
         {/* Overview */}
-        <Container className='py-16'>
+        <Container className='py-20'>
           <div className='text-5xl font-medium pb-4'>Overview</div>
           <div className='grid md:grid-cols-3 grid-cols-1 text-xl gap-10'>
 
@@ -158,29 +170,29 @@ export default function Oursong() {
             In May 2019, OurSong (v.1) was launched, utilizing blockchain technology to create limited edition NFTs represented as virtual cards, essentially digital token.  The NFTs are collectible due to supply is limited, and each one is uniquely owned by its owner.  Our platform also allows collectors to trade these NFTs on our marketplace.
           </div>
 
-          <div className="grid grid-cols-5 gap-4 py-2">
+          <div className="grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-4 py-2">
             <div>
-              <Image src={explore0} alt="" className='h-auto w-auto border-[4px] border-black rounded-[22px]' />
+              <Image src={explore0} alt="" className='h-auto w-auto border-[5px] border-black rounded-[22px]' />
               <p className='text-black pt-2 px-2 text-base text-center'>Explore available Music NFTs</p>
             </div>
 
             <div className=''>
-              <Image src={explore1} alt="" className='h-auto w-auto border-[4px] border-black rounded-[22px]' />
+              <Image src={explore1} alt="" className='h-auto w-auto border-[5px] border-black rounded-[22px]' />
               <p className='text-black pt-2 px-2 text-base text-center'>Discover the details behind of a song</p>
             </div>
 
             <div>
-              <Image src={explore3} alt="" className='h-auto w-auto border-[4px] border-black rounded-[22px]' />
+              <Image src={explore3} alt="" className='h-auto w-auto border-[5px] border-black rounded-[22px]' />
               <p className='text-black pt-2 px-2 text-base text-center'>Music NFTs showcased as virtual cards</p>
             </div>
 
             <div className=''>
-              <Image src={explore4} alt="" className='h-auto w-auto border-[4px] border-black rounded-[22px]' />
+              <Image src={explore4} alt="" className='h-auto w-auto border-[5px] border-black rounded-[22px]' />
               <p className='text-black pt-2 px-2 text-base text-center'>Swipe the card for exclusive contents</p>
             </div>
 
             <div>
-              <Image src={explore2} alt="" className='h-auto w-auto border-[4px] border-black rounded-[22px]' />
+              <Image src={explore2} alt="" className='h-auto w-auto border-[5px] border-black rounded-[22px]' />
               <p className='text-black pt-2 px-2 text-base text-center'>Buy or sell on our marketplace</p>
             </div>
           </div>
@@ -226,43 +238,49 @@ export default function Oursong() {
           <div className='grid md:grid-cols-3 grid-cols-1 text-xl gap-12 pt-2'>
 
             <div className='flex md:flex-col gap-4 w-full'>
-              <div className='md:w-full h-auto w-1/2'>
-                <Image src={pivot1} alt="" className='border-[6px] border-black rounded-[32px]' />
+              <div className='md:w-full h-auto w-1/3'>
+                <Image src={pivot1} alt="" className='md:border-[6px] sm:border-[5px] border-[3px] border-black md:rounded-[32px] sm:rounded-[24px] rounded-[16px]' />
               </div>
-              <div className='flex flex-col px-1 md:w-full w-1/2'>
-                <div className='text-3xl font-medium'>#1</div>
-                <div className='text-3xl font-medium'>Improve clarity</div>
-                <div className='text-lg pt-2'>
-                  Provide clear information about the benefits of purchasing this NFT.
+              <div className='flex md:w-full w-2/3'>
+                <p className='w-8 text-black pb-1 text-3xl font-medium'>1.</p>
+                <div className='flex-1'>
+                  <p className='text-black text-3xl font-medium'>Improve clarity</p> 
+                  <p className='text-black text-lg pt-1'>
+                    Provide clear information about the benefits of purchasing this NFT.
+                  </p>
                 </div>
               </div>
             </div>
 
             <div className='flex md:flex-col gap-4 w-full'>
-              <div className='md:w-full h-auto w-1/2'>
-                <Image src={pivot2} alt="" className='border-[6px] border-black rounded-[32px]' />
+              <div className='md:w-full h-auto w-1/3'>
+                <Image src={pivot2} alt="" className='md:border-[6px] sm:border-[5px] border-[3px] border-black md:rounded-[32px] sm:rounded-[24px] rounded-[16px]' />
               </div>
-              <div className='flex flex-col px-1 md:w-full w-1/2'>
-                <div className='text-3xl font-medium'>#2</div>
-                <div className='text-3xl font-medium'>Share your thoughts</div>
-                <div className='text-lg pt-2'>
-                  Allow fans to share their impressions with the artists/creators and all others who appreciate the song.
+              <div className='flex md:w-full w-2/3'>
+                <p className='w-8 text-black pb-1 text-3xl font-medium'>2.</p>
+                <div className='flex-1'>
+                  <p className='text-black text-3xl font-medium'>Share your thought</p> 
+                  <p className='text-black text-lg pt-1'>
+                    Allow fans to share their impressions with the artists/creators and all others who appreciate the song.
+                  </p>
                 </div>
               </div>
             </div>
 
             <div className='flex md:flex-col gap-4 w-full'>
-              <div className='md:w-full h-auto w-1/2'>
-                <Image src={pivot3} alt="" className='border-[6px] border-black rounded-[32px]' />
+              <div className='md:w-full h-auto w-1/3'>
+                <Image src={pivot3} alt="" className='md:border-[6px] sm:border-[5px] border-[3px] border-black md:rounded-[32px] sm:rounded-[24px] rounded-[16px]' />
               </div>
-              <div className='flex flex-col px-1 md:w-full w-1/2'>
-                <div className='text-3xl font-medium'>#3</div>
-                <div className='text-3xl font-medium'>Get exclusive message</div>
-                <div className='text-lg pt-2'>
-                  NFT owners will receive exclusive messages from artists/creators and can also leave comments.
-                </div>
-                <div className='text-xl font-semibold italic pt-2'>
-                  (We chose a message UI over feed posts for a more private interaction).
+              <div className='flex md:w-full w-2/3'>
+                <p className='w-8 text-black pb-1 text-3xl font-medium'>3.</p>
+                <div className='flex-1'>
+                  <p className='text-black text-3xl font-medium'>Get exclusive message</p> 
+                  <p className='text-black text-lg pt-1'>
+                    NFT owners will receive exclusive messages from artists/creators and can also leave comments.
+                  </p>
+                  <p className='text-black font-semibold text-lg pt-2 '>
+                    (We chose Chat UI over feed posts for a more private interaction).
+                  </p>
                 </div>
               </div>
             </div>
@@ -317,6 +335,9 @@ export default function Oursong() {
               <div className='text-lg'>
                 We used Empathy Maps to enhance our understand of user profile, helping teams in developing valuable insights.
               </div>
+              <div className='text-lg'>
+                I then collaborated with the product team to brainstorm product ideas.
+              </div>
             </div>
 
             <div className="flex flex-col gap-1 justify-center aspect-center">
@@ -343,52 +364,57 @@ export default function Oursong() {
         <Container className='py-16 gap-4 flex flex-col'>
           <div className='text-5xl font-medium'>Solution</div>
 
-          <div className='flex flex-col gap-16'>
             {/* #1 */}
-            <div className='flex flex-col'>
-              <div className="grid grid-cols-5 gap-4 py-2">
-                <div>
-                  <Image src={explore0} alt="" className='h-auto w-auto border-[4px] border-black rounded-[22px]' />
+            <div className='flex flex-col gap-4'>
+              <div className='gap-2 flex flex-col'>
+                <div className='pt-4 text-3xl font-medium'>
+                  Music NTF = VIP community access card
                 </div>
-
-                <div className=''>
-                  <Image src={explore1} alt="" className='h-auto w-auto border-[4px] border-black rounded-[22px]' />
-                </div>
-
-                <div>
-                  <Image src={explore3} alt="" className='h-auto w-auto border-[4px] border-black rounded-[22px]' />
-                </div>
-
-                <div className=''>
-                  <Image src={explore4} alt="" className='h-auto w-auto border-[4px] border-black rounded-[22px]' />
-                </div>
-
-                <div>
-                  <Image src={explore2} alt="" className='h-auto w-auto border-[4px] border-black rounded-[22px]' />
+                <div className='text-lg'>
+                  The virtual NFT card acts as a unique digital membership token, granting access to exclusive VIP communities. Here, members find belonging, acceptance, and identity within the group, free from fake news and artificial connections.
                 </div>
               </div>
 
-              <div className='flex flex-col gap-4 justify-center h-full p-10'>
-                <div className='text-4xl font-medium'>
-                  Music NTF = Access Card
+              <div className="grid md:grid-cols-2 grid-cols-1 pt-4 md:gap-8 gap-4">
+                <div className='flex'>
+                  <p className='w-8 text-black pb-1 text-2xl font-medium'>1.</p>
+                  <div className='flex-1'>
+                    <p className='text-black text-2xl font-medium'>Interest-based communities</p> 
+                    <p className='text-black text-lg pt-1'>It is where the entire conversation is crafted, replacing the traditional tree diagram.</p>
+                  </div>
                 </div>
-                <div className='text-lg'>
-                  The virtual NFT card acts as a unique digital membership token, granting access to exclusive VIP communities. 
+
+                <div className='flex'>
+                  <p className='w-8 text-black pb-1 text-2xl font-medium'>2.</p>
+                  <div className='flex-1'>
+                    <p className='text-black text-2xl font-medium'>Channel organization</p> 
+                    <p className='text-black text-lg pt-1'>Each channel serves a specific purpose or topic, allowing users to find discussions they are interested in.</p>
+                  </div>
                 </div>
-                <div className='text-lg'>
-                  Here, members find belonging, acceptance, and identity within the group, free from fake news and artificial connections.
+              </div>
+
+              <div className="mx-auto w-full flex justify-center bg-gray-200 md:p-10 p-6">
+                <div className='grid grid-cols-2 md:gap-8 gap-4'>
+                  <Image
+                    src={solution1}
+                    alt="Strategy"
+                    height={420}
+                    className='mx-auto md:border-[5px] sm:border-[4px] border-[3px] border-black md:rounded-[24px] sm:rounded-[20px] rounded-[16px]'
+                  />
+                  <Image
+                    src={solution2}
+                    alt="Strategy"
+                    height={420}
+                    className='mx-auto md:border-[5px] sm:border-[4px] border-[3px] border-black md:rounded-[24px] sm:rounded-[20px] rounded-[16px]'
+                  />
                 </div>
-                <ul className='list-decimal pl-5 gap-4 flex flex-col text-lg'>
-                  <li><span className='font-bold'>Interest-based communities</span> - Connect individuals with shared passions, enable collaboration and communication on topics they are passionate in.</li>
-                  <li><span className='font-bold'>Channel organization</span> - Each channel serves a specific purpose or topic, allowing users to find discussions they are interested in.</li>
-                </ul>
               </div>
             </div>
 
             {/* #2 */}
-            <div className='grid md:grid-cols-2 grid-cols-1'>
-              <div className='flex flex-col gap-4 justify-center h-full p-10'>
-                <div className='text-4xl font-medium'>
+            <div className='flex flex-col gap-4 pt-8'>
+              <div className='gap-2 flex flex-col'>
+                <div className='pt-4 text-3xl font-medium'>
                   Enabled self-servicing
                 </div>
                 <div className='text-lg'>
@@ -396,270 +422,151 @@ export default function Oursong() {
                 </div>
               </div>
 
-              <div className="flex aspect-square justify-center p-10 bg-gray-200">
-                <div>
-                  <Image src={selfservice} alt="" className='border-[4px] h-full w-auto border-black rounded-[22px]' />
+              <div className="mx-auto w-full flex justify-center bg-gray-200 md:p-10 p-6">
+                <div className='grid md:grid-cols-3 grid-cols-1 md:gap-8 gap-4 justify-center items-center flex flex-col'>
+                  <Image
+                    src={selfservice}
+                    alt="Strategy"
+                    height={420}
+                    className='mx-auto md:border-[5px] sm:border-[4px] border-[4px] border-black md:rounded-[24px] sm:rounded-[20px] rounded-[20px]'
+                  />
+                  <Image
+                    src={creationflow}
+                    alt="Strategy"
+                    height={420}
+                    className='mx-auto col-span-2'
+                  />
                 </div>
               </div>
             </div>
 
             {/* #3 */}
-
-          </div>
-        </Container>
-
-
-        {/* Features */}
-        <Container className='py-8 flex flex-col gap-8'>
-          <div className='grid md:grid-cols-3 grid-cols-1 text-xl md:gap-8'>
-            <div className='flex flex-col justify-center col-span-1 gap-1'>
-              <div className='md:text-4xl text-2xl font-medium'>
-                1-click navigate through different branches
-              </div>
-              <p className='text-base flex flex-col pb-2'>
-                Easily navigate each branch to focus on the conversation in each subcategory.
-              </p>
-            </div>
-
-            <div className='col-span-2'>
-              <Image
-                src={feature1}
-                alt="Feature 1"
-                layout="fit"
-                objectFit="contain"
-                className=''
-              />
-            </div>
-          </div>
-
-          <div className='grid md:grid-cols-3 grid-cols-1 text-xl md:gap-8'>
-            <div className='flex flex-col justify-center col-span-1 gap-1'>
-              <div className='md:text-4xl text-2xl font-medium'>
-                Drag and drop
-              </div>
-              <p className='text-base flex flex-col pb-2'>
-                Enables users to drag and drop pre-configured elements from the right panel, ensuring accessibility for those without technical expertise.
-              </p>
-            </div>
-
-            <div className='col-span-2'>
-              <Image
-                src={feature2}
-                alt="Feature 2"
-                layout="fit"
-                objectFit="contain"
-                className=''
-              />
-            </div>
-          </div>
-
-          <div className='grid md:grid-cols-3 grid-cols-1 text-xl md:gap-8'>
-            <div className='flex flex-col justify-center col-span-1 gap-1'>
-              <div className='md:text-4xl text-2xl font-medium'>
-                Hierarchy of visual elements
-              </div>
-              <p className='text-base flex flex-col pb-2'>
-                Allows users to customize the right panel of elements without navigating through multiple menus or interfaces.
-              </p>
-            </div>
-
-            <div className='col-span-2'>
-              <Image
-                src={feature3}
-                alt="Feature 3"
-                layout="fit"
-                objectFit="contain"
-                className=''
-              />
-            </div>
-          </div>
-        </Container>
-
-
-        {/* More */}
-        <Container className='py-16'>
-          <div className='text-5xl font-medium pb-4'>More Features</div>
-
-          <ul role="list" className="grid md:grid-cols-2 grid-cols-1 gap-8">
-            <li>
-              <Image src={trainingphrase} alt=""/>
-              <div className='flex pt-2 text-base'>Chatbot training</div>
-            </li>
-
-            <li>
-              <Image src={preview} alt=""/>
-              <div className='flex pt-2 text-base'>Chatbot testing</div>
-            </li>
-
-            <li>
-              <Image src={barometer} alt=""/>
-              <div className='flex pt-2 text-base'>Chatbot health monitoring</div>
-            </li>
-
-            <li>
-              <Image src={copypaste} alt=""/>
-              <div className='flex pt-2 text-base'>Reuse steps or workflows</div>
-            </li>
-
-            <li>
-              <Image src={translation} alt=""/>
-              <div className='flex pt-2 text-base'>Support multilingual</div>
-            </li>
-          </ul>
-        </Container>
-
-
-        {/* Iteration */}
-        <Container className='py-16'>
-          <div className='text-5xl font-medium pb-3'>Iteration</div>
-          <div className='text-lg pb-4'>
-            The toughest part of this project is making sure everything looks clear and that interactions are consistent, especially when dealing with issues like “users can’t delete” and understanding why certain actions are restricted.
-          </div>
-          <div className='text-lg pb-4'>
-            To accomplish this, we explore every use case and scenario, using clear labels, tooltips, dialog-box, and well-organized visual layout to guide users effectively.
-          </div>
-
-          <div className="flex flex-col bg-gray-100 p-10 gap-10">
-            <Image src={iteration1} alt="" />
-            <Image src={iteration2} alt="" />
-          </div>
-        </Container>
-
-
-        {/* Design System */}
-        <Container className='py-16'>
-          <div className='text-5xl font-medium pb-3'>Design System</div>
-          <div className='text-lg pb-4'>
-            When designing a component for a design system, it’s essential to consider all potential use cases, and should be adaptable and scalable to different products within the organization.
-          </div>
-
-          <div className="flex flex-col bg-gray-100 p-10 gap-10">
-            <Image src={designsystem} alt="" />
-          </div>
-        </Container>
-
-
-        {/* Bug Bash */}
-        <Container className='py-16'>
-          <div className='text-5xl font-medium pb-3'>Bug Bash</div>
-          <div className='text-lg pb-4'>
-            I worked very closely with the Front End team to spec out any missing interactions that were not covered in the high fidelity mockups. 
-          </div>
-          <div className='text-lg pb-4'>
-            I utilized Chrome “Inspect” to assist engineers in debugging and fixing code issue.
-          </div>
-
-          <div className="flex flex-col bg-gray-100 p-10 gap-10">
-            <Image src={bugbash} alt="" />
-          </div>
-        </Container>
-
-        
-        {/* User Feedbacks */}
-        <Container className='py-16'>
-          <div className='grid grid-cols-2 gap-8'>
-            <div className='col-span-1'>
-              <div className='text-5xl font-medium pb-3'>User Feedbacks</div>
-              <div className='text-lg pb-4'>
-                We conducted user interview and remote testing sessions regularly with our clients, helped us to validate, test ideas and iterate quickly.
-              </div>
-            </div>
-
-            <div className='col-span-1'>
-              <Image src={validation} alt="" />
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-3 grid-cols-1 pt-8 gap-8">
-            <div className='flex flex-col gap-1'>
-              <div className='flex gap-4'>
-                <Image src={vmware} alt="" className='w-10 h-10' />
-                <div className='flex flex-col'>
-                  <div className='text-2xl font-medium'>CS Admin</div>
-                  <div className='text-base'>VMware</div>
+            <div className='flex flex-col gap-4 pt-8'>
+              <div className='gap-2 flex flex-col'>
+                <div className='pt-4 text-3xl font-medium'>
+                  Send NFT as gifts or invitations
+                </div>
+                <div className='text-lg'>
+                  Allow artists/creators to gifting minted NFT to their fans or friends as a reward, which also serves as an invitation card to their private chat room.
                 </div>
               </div>
-              <div className='flex gap-4'>
-                <div className='flex-1'>
-                  <p className='text-black text-lg pt-2 italic'>" ... implementation has been easy and thorough and the tool is very easy to use.  I’m still early into configuration but so far the experience has been great… "</p>
+
+              <div className="mx-auto w-full flex justify-center bg-gray-200 md:p-10 p-6">
+                <div className='grid grid-cols-2 md:gap-8 gap-4'>
+                  <Image
+                    src={sendgift1}
+                    alt="Strategy"
+                    height={420}
+                    className='mx-auto md:border-[5px] sm:border-[4px] border-[3px] border-black md:rounded-[24px] sm:rounded-[20px] rounded-[16px]'
+                  />
+                  <Image
+                    src={sendgift2}
+                    alt="Strategy"
+                    height={420}
+                    className='mx-auto md:border-[5px] sm:border-[4px] border-[3px] border-black md:rounded-[24px] sm:rounded-[20px] rounded-[16px]'
+                  />
                 </div>
               </div>
             </div>
 
-            <div className='flex flex-col gap-1'>
-              <div className='flex gap-4'>
-                <Image src={upwork} alt="" className='w-10 h-10' />
-                <div className='flex flex-col'>
-                  <div className='text-2xl font-medium'>Project Manager/Admin</div>
-                  <div className='text-base'>Upwork</div>
+            {/* #4 */}
+            <div className='flex flex-col gap-4 pt-8'>
+              <div className='gap-2 flex flex-col'>
+                <div className='pt-4 text-3xl font-medium'>
+                  Monetization
+                </div>
+                <div className='text-lg'>
+                  "Likes" often lack genuine sentiment and can be inflated; instead, give props that hold tangible value.
                 </div>
               </div>
-              <div className='flex gap-4'>
-                <div className='flex-1'>
-                  <p className='text-black text-lg pt-2 italic'>" ... I really like this product, the workflow builder is awesome.  It’s really easy to understand. Seeing the status per bubble helps (Barometer). Training the workflow is easy… ”</p>
+
+              <div className="mx-auto w-full flex justify-center bg-gray-200 md:p-10 p-6">
+                <div className='grid grid-cols-2 md:gap-8 gap-4'>
+                  <Image
+                    src={monetization1}
+                    alt="Strategy"
+                    height={420}
+                    className='mx-auto md:border-[5px] sm:border-[4px] border-[3px] border-black md:rounded-[24px] sm:rounded-[20px] rounded-[16px]'
+                  />
+                  <Image
+                    src={monetization2}
+                    alt="Strategy"
+                    height={420}
+                    className='mx-auto md:border-[5px] sm:border-[4px] border-[3px] border-black md:rounded-[24px] sm:rounded-[20px] rounded-[16px]'
+                  />
                 </div>
               </div>
             </div>
 
-            <div className='flex flex-col gap-1'>
-              <div className='flex gap-4'>
-                <Image src={ifit} alt="" className='w-10 h-10' />
-                <div className='flex flex-col'>
-                  <div className='text-2xl font-medium'>Operations Manager</div>
-                  <div className='text-base'>iFit</div>
+            {/* #5 */}
+            <div className='flex flex-col gap-4 pt-8'>
+              <div className='gap-2 flex flex-col'>
+                <div className='pt-4 text-3xl font-medium'>
+                  Offline event voucher
+                </div>
+                <div className='text-lg'>
+                  NFTs can also function as office vouchers.  These digital tokens can be redeemed for various rewards with the OurSong platform, such as concert admission, merchandise redemption, and more.
                 </div>
               </div>
-              <div className='flex gap-4'>
-                <div className='flex-1'>
-                  <p className='text-black text-lg pt-2 italic'>" ... it’s not complex, not like you need to take an online courses to figure out how to use it, utilize the AI and the interface to make it as simple and as intuitive… “</p>
+
+              <div className="mx-auto w-full flex justify-center bg-gray-200 md:p-10 p-6">
+                <div className='grid grid-cols-2 md:gap-8 gap-4'>
+                  <Image
+                    src={voucher1}
+                    alt="Strategy"
+                    height={420}
+                    className='mx-auto md:border-[5px] sm:border-[4px] border-[3px] border-black md:rounded-[24px] sm:rounded-[20px] rounded-[16px]'
+                  />
+                  <Image
+                    src={voucher2}
+                    alt="Strategy"
+                    height={420}
+                    className='mx-auto md:border-[5px] sm:border-[4px] border-[3px] border-black md:rounded-[24px] sm:rounded-[20px] rounded-[16px]'
+                  />
                 </div>
               </div>
             </div>
-          </div>
         </Container>
         
 
         {/* Results */}
-        <Container className='py-16'>
-          <div className='text-5xl font-medium pb-3'>Results</div>
-          <div className='text-lg pb-8'>
-            The introduction of Solve version 1.0 has not only significantly improved its product-market fit but has also:
+        <Container className='py-16 gap-4 flex flex-col'>
+          <div className='text-5xl font-medium'>Results</div>
+          <div className='text-lg'>
+            After several rounds of iteration following a major product pivot, our efforts have led to significant advancements and positive outcomes.
           </div>
 
-          <div className='flex'>
+          <div className='flex pt-4'>
             <ul className='list-disc pl-6 gap-4 flex flex-col md:text-4xl text-2xl'>
-              <li>Generated over <span className='font-semibold'>50%</span> of the company's revenue.</li>
-              <li>Reduce the first valuable moment from 120 days to <span className='font-semibold'>32 days</span>.</li>
-              <li>Self-serviceability increased by over <span className='font-semibold'>10%</span>.</li>
+              <li>Achieved <span className='font-semibold'>150k</span> active users.</li>
+              <li>Welcomed John Legend as Co-founder.</li>
+              <li>Secured <span className='font-semibold'>$7.5 million</span>seed round.</li>
             </ul>
           </div>
-        </Container>
 
+          <div className="grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-4 py-2">
+            <div>
+              <Image src={result1} alt="" className='h-auto w-auto' />
+            </div>
 
-        {/* Continued improvements */}
-        <Container className='py-16'>
-          <div className='p-10 bg-gray-100'>
-            <div className='grid grid-cols-2 gap-10'>
-              <div className='flex flex-col'>
-                <div className='col-span-1'>
-                  <div className='text-5xl font-medium pb-4'>Continued improvements</div>
-                </div>
+            <div className=''>
+              <Image src={result2} alt="" className='h-auto w-auto' />
+            </div>
 
-                <div className='flex'>
-                  <ul className='list-disc pl-6 gap-5 flex flex-col text-lg'>
-                    <li><span className='font-semibold'>Improve efficiency</span> - Drag-and-drop components speed up workflow building.</li>
-                    <li><span className='font-semibold'>Scalable design</span> - Maintains optimal user experience as features grow.</li>
-                    <li><span className='font-semibold'>Reduce friction</span> - Clear error messages guide users on corrective steps.</li>
-                  </ul>
-                </div>
-              </div>
+            <div>
+              <Image src={result3} alt="" className='h-auto w-auto' />
+            </div>
 
-              <div className='col-span-1'>
-                <Image src={v2cover} alt="" />
-              </div>
+            <div className=''>
+              <Image src={result4} alt="" className='h-auto w-auto' />
+            </div>
+
+            <div>
+              <Image src={result5} alt="" className='h-auto w-auto' />
             </div>
           </div>
         </Container>
+
 
       </div>
       <Footer />
